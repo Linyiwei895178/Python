@@ -816,7 +816,7 @@
 
 # time.sleep(5000000)
 
-file = open("word.txt", "r", encoding = "UTF-8")
+# file = open("word.txt", "r", encoding = "UTF-8")
 # content = file.read()
 # print(content)
 # print(content.count("itheima"))
@@ -895,5 +895,27 @@ file = open("word.txt", "r", encoding = "UTF-8")
 
 # main()
 # import time
-from time import *
-sleep(5)
+# from time import *
+# sleep(5)
+
+import json
+data = [{"name": "zhangdashan", "age": 11}, {"name": "wangdachui", "age": 13}, {"name": "zhangxiaohu", "age": 16},]
+
+json_str = json.dumps(data)
+print(type(json_str))
+print(json_str)
+
+d = {"name": "zhoujielun", "addr": "taibei"}
+json_str = json.dumps(d)
+print(type(json_str))
+print(json_str)
+
+s = '[{"name": "zhangdashan", "age": 11}, {"name": "wangdachui", "age": 13}]'
+l = json.loads(s)
+print(type(l))
+print(l)
+
+d = '{"name": "zhoujielun", "addr": "taibei"}'
+json_str = json.loads(d)
+print(type(json_str))
+print(json_str)
