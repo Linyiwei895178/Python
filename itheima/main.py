@@ -13,10 +13,11 @@
 
 # from module import *
 
-import my_utils.str_util
-from my_utils import file_util
-print(my_utils.str_util.str_reverse("Linyiwei"))
-print(my_utils.str_util.substr("Linyiwei", 2, 5))
+# import my_utils.str_util
+# from my_utils import file_util
+# print(my_utils.str_util.str_reverse("Linyiwei"))
+# print(my_utils.str_util.substr("Linyiwei", 2, 5))
 
-file_util.append_to_file("file/word.txt", "Linyiwei")
-file_util.print_file_info("file/word.txt")
+# file_util.append_to_file("file/word.txt", "Linyiwei")
+# file_util.print_file_info("file/word.txt")
+

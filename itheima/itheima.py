@@ -898,24 +898,46 @@
 # from time import *
 # sleep(5)
 
-import json
-data = [{"name": "zhangdashan", "age": 11}, {"name": "wangdachui", "age": 13}, {"name": "zhangxiaohu", "age": 16},]
+# import json
+# data = [{"name": "zhangdashan", "age": 11}, {"name": "wangdachui", "age": 13}, {"name": "zhangxiaohu", "age": 16},]
 
-json_str = json.dumps(data)
-print(type(json_str))
-print(json_str)
+# json_str = json.dumps(data)
+# print(type(json_str))
+# print(json_str)
 
-d = {"name": "zhoujielun", "addr": "taibei"}
-json_str = json.dumps(d)
-print(type(json_str))
-print(json_str)
+# d = {"name": "zhoujielun", "addr": "taibei"}
+# json_str = json.dumps(d)
+# print(type(json_str))
+# print(json_str)
 
-s = '[{"name": "zhangdashan", "age": 11}, {"name": "wangdachui", "age": 13}]'
-l = json.loads(s)
-print(type(l))
-print(l)
+# s = '[{"name": "zhangdashan", "age": 11}, {"name": "wangdachui", "age": 13}]'
+# l = json.loads(s)
+# print(type(l))
+# print(l)
 
-d = '{"name": "zhoujielun", "addr": "taibei"}'
-json_str = json.loads(d)
-print(type(json_str))
-print(json_str)
+# d = '{"name": "zhoujielun", "addr": "taibei"}'
+# json_str = json.loads(d)
+# print(type(json_str))
+# print(json_str)
+
+class Student:
+    name = None
+    gender = None
+    nationality = None
+    native_place = None
+    age = None
+    
+    def say_hi(self):
+        print(f"hi everyone, my name is {self.name}")
+
+    def say_hi(self, msg):
+        print(f"hi everyone, this is {msg}")
+
+stu_1 = Student()
+stu_1.name = "linjunjie"
+stu_1.gender = "nan"
+stu_1.nationality = "zhongguo"
+stu_1.native_place = "shandongsheng"
+stu_1.age = "38"
+stu_1.say_hi("Linyiwei")
+
