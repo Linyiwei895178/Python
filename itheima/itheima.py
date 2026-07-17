@@ -1179,43 +1179,44 @@
 # make_noise(dog)
 # make_noise(cat)
 
-class AC:
-    def cool_wind(self):
-        "cold"
+# class AC:
+#     def cool_wind(self):
+#         "cold"
     
-    def hot_wind(self):
-        pass
+#     def hot_wind(self):
+#         pass
 
-    def swing_l_r(self):
-        pass
+#     def swing_l_r(self):
+#         pass
 
-class Midea_AC(AC):
-    def cool_wind(self):
-        print("midea cold wind")
+# class Midea_AC(AC):
+#     def cool_wind(self):
+#         print("midea cold wind")
     
-    def hot_wind(self):
-        print("midea hot wind")
+#     def hot_wind(self):
+#         print("midea hot wind")
 
-    def swing_l_r(self):
-        print("Midea wind")
+#     def swing_l_r(self):
+#         print("Midea wind")
 
-class GREE_AC(AC):
-    def make_cool(ac: AC):
-        print("gree cold wind")
+# class GREE_AC(AC):
+#     def make_cool(ac: AC):
+#         print("gree cold wind")
 
-    def hot_wind(self):
-        print("gree hot wind")
+#     def hot_wind(self):
+#         print("gree hot wind")
 
-    def swing_l_r(self):
-        print("gree swing wind")
+#     def swing_l_r(self):
+#         print("gree swing wind")
 
-def make_cool(ac: AC):
-    ac.cool_wind()
+# def make_cool(ac: AC):
+#     ac.cool_wind()
 
-midea_ac = Midea_AC()
-gree_ac = GREE_AC()
+# midea_ac = Midea_AC()
+# gree_ac = GREE_AC()
 
-make_cool(midea_ac)
-make_cool(gree_ac)
+# make_cool(midea_ac)
+# make_cool(gree_ac)
+
 
 
