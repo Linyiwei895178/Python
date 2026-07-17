@@ -920,24 +920,302 @@
 # print(type(json_str))
 # print(json_str)
 
-class Student:
-    name = None
-    gender = None
-    nationality = None
-    native_place = None
-    age = None
+# class Student:
+#     name = None
+#     gender = None
+#     nationality = None
+#     native_place = None
+#     age = None
     
-    def say_hi(self):
-        print(f"hi everyone, my name is {self.name}")
+#     def say_hi(self):
+#         print(f"hi everyone, my name is {self.name}")
 
-    def say_hi(self, msg):
-        print(f"hi everyone, this is {msg}")
+#     def say_hi(self, msg):
+#         print(f"hi everyone, this is {msg}")
 
-stu_1 = Student()
-stu_1.name = "linjunjie"
-stu_1.gender = "nan"
-stu_1.nationality = "zhongguo"
-stu_1.native_place = "shandongsheng"
-stu_1.age = "38"
-stu_1.say_hi("Linyiwei")
+# stu_1 = Student()
+# stu_1.name = "linjunjie"
+# stu_1.gender = "nan"
+# stu_1.nationality = "zhongguo"
+# stu_1.native_place = "shandongsheng"
+# stu_1.age = "38"
+# stu_1.say_hi("Linyiwei")
+
+# class Clock:
+#     id = None
+#     price = None
+
+#     def ring(self):
+#         import winsound
+#         winsound.Beep(2000, 3000)
+
+# clock1 = Clock()
+# clock1.id = "003032"
+# clock1.price = 19.99
+# print(f"clock id: {clock1.id}, price: {clock1.price}")
+# clock1.ring()
+
+# class Student:
+#     name = None
+#     # gender = None
+#     # nationality = None
+#     # native_place = None
+#     age = None
+#     tel = None
+    
+#     def __init__(self, name, age, tel):
+#         self.name = name
+#         self.age = age
+#         self.tel = tel
+
+#     def __str__(self):
+#         return f"student: name: {self.name}, age: {self.age}"
+
+#     def __lt__(self, other):
+#         return self.age < other.age
+
+#     def __le__(self, other):
+#         return self.age <= other.age
+    
+#     def __eq__(self, other):
+#         return self.age == other.age
+    # def say_hi(self):
+    #     print(f"hi everyone, my name is {self.name}")
+
+    # def say_hi(self, msg):
+    #     print(f"hi everyone, this is {msg}")
+
+# stu = Student("zhoujielun", 31, "18500006666")
+# print(stu.name)
+# print(stu.age)
+# print(stu.tel)
+# print(stu)
+
+# stu1 = Student("linjunjie", 36, "8328197859")
+# print(stu1 > stu)
+# print(stu1 < stu)
+
+# print(stu1 > stu)
+# print(stu1 < stu)
+
+# class Phone:
+#     IMEI = None
+#     producer = None
+
+#     __current_votage = 0.5
+
+#     def __keep_single_core(self):
+#         print("let cpu single run")
+
+#     def call_by_5g(self):
+#         if self.__current_votage >= 1:
+#             print("5g is on")
+#         else:
+#             print("5g is off")
+#             self.__keep_single_core()
+# phone1 = Phone()
+# # phone1.__keep_single_core()
+# phone1.call_by_5g()
+
+# class Phone:
+    
+#     __is_5g_enable = False
+
+#     def __init__(self):
+#         self.__is_5g_enable = True
+
+#     def __check_5g(self):
+#         if self.__check_5g == True:
+#             print("5G is on")
+#         else:
+#             print("5G is off, 4G is using")
+        
+#     def call_by_5g(self):
+#         self.__check_5g()
+#         print("is on the phone")
+
+# ios_phone = Phone()
+# ios_phone.__init__()
+# ios_phone.call_by_5g()
+
+# class Phone:
+#     IMEI = None
+#     producer = None
+
+#     def call_by_4g(self):
+#         print("4g telephone")
+# class Phone2022(Phone):
+#     face_id = True
+
+#     def call_by_5g(self):
+#         print("2022 latest 5g telephone")
+
+# ios_phone = Phone2022(Phone)
+# print(ios_phone.producer)
+# ios_phone.call_by_4g()
+# ios_phone.call_by_5g()
+
+
+# class Phone:
+    
+#     __is_5g_enable = False
+
+#     def __init__(self):
+#         self.__is_5g_enable = True
+
+#     def __check_5g(self):
+#         if self.__check_5g == True:
+#             print("5G is on")
+#         else:
+#             print("5G is off, 4G is using")
+        
+#     def call_by_5g(self):
+#         self.__check_5g()
+#         print("is on the phone")
+
+# class NFCReader:
+#     nfc_type = "the fifth generation"
+#     producer = "HM"
+
+#     def read_card(self):
+#         print("NFC reader")
+    
+#     def write_card(self):
+#         print("NFC write card")
+
+# class RemoteControl:
+#     rc_type = "infrared control"
+
+#     def control(self):
+#         print("infrared control is on")
+
+# class MyPhone(Phone, NFCReader, RemoteControl):
+#     pass
+
+# phone = MyPhone()
+# phone.call_by_5g()
+# phone.read_card()
+# phone.write_card()
+# phone.control()
+
+# class Phone :
+#     IMEI = None
+#     producer = "ITCAST"
+#     def call_by_5g(self):
+#         print("using 5G network to phone")
+
+# class MyPhone(Phone):
+#     producer = "ITHEIMA"
+
+#     def call_by_5g(self):
+#         print("CPU on and make sure less electricity")
+#         print("using 5G to phone")
+#         print(Phone.producer)
+#         print(super().producer)
+#         print("5G is off and make sure the performance")
+
+# phone = MyPhone()
+# phone.call_by_5g()
+# print(phone.producer)
+
+# import random 
+# print(random.randint())
+
+# var_1 : int = 10
+# var_2 : str = "itheima"
+# var_3 : bool = True
+
+# class Student:
+#     pass
+# stu : Student = Student()
+
+# my_list: list = [1, 2, 3]
+# my_tuple: tuple = (1, 2, 3)
+# my_dict: dict = ["linyiwei", "18"]
+
+# var_1 = 10    # type: int
+
+# def add(x: int, y: int):
+#     return x + y
+# print(add(12, 12))
+
+# def func(data: list) -> list:
+#     return data
+    
+# print(func([1, 2, 3]))
+
+# my_list: list[int] = [1, 2, 3]
+# my_dict: dict[str, int] = {"age": 11, "num": 3}
+
+# from typing import Union
+
+# my_list: list[Union[str, int]] = [1, 2, "itcast", "itheima"]
+
+# # my_dict: dict[str, Union[str, int]] = 
+
+# def func(data: Union[int, str]) -> Union[int, str]:
+#     pass
+
+# func()
+
+# class Animal:
+#     def speak(self):
+#         pass
+
+# class Dog(Animal):
+#     def speak(self):
+#         print("wangwangwang")
+
+# class Cat(Animal):
+#     def speak(self):
+#         print("miaomiaomiao")
+
+# def make_noise(animal: Animal):
+#     animal.speak()
+
+# dog = Dog()
+# cat = Cat()
+
+# make_noise(dog)
+# make_noise(cat)
+
+class AC:
+    def cool_wind(self):
+        "cold"
+    
+    def hot_wind(self):
+        pass
+
+    def swing_l_r(self):
+        pass
+
+class Midea_AC(AC):
+    def cool_wind(self):
+        print("midea cold wind")
+    
+    def hot_wind(self):
+        print("midea hot wind")
+
+    def swing_l_r(self):
+        print("Midea wind")
+
+class GREE_AC(AC):
+    def make_cool(ac: AC):
+        print("gree cold wind")
+
+    def hot_wind(self):
+        print("gree hot wind")
+
+    def swing_l_r(self):
+        print("gree swing wind")
+
+def make_cool(ac: AC):
+    ac.cool_wind()
+
+midea_ac = Midea_AC()
+gree_ac = GREE_AC()
+
+make_cool(midea_ac)
+make_cool(gree_ac)
+
 
