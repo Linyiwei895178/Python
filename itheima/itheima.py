@@ -1218,5 +1218,167 @@
 # make_cool(midea_ac)
 # make_cool(gree_ac)
 
+# def outer(logo):
 
+#     def inner(msg):
+#         # nonlocal 
+#         print(f"<{logo}>{msg}<{logo}>")
 
+#     return inner
+
+# fn1 = outer("itheimachengxuyuan")
+# fn1("Hello everyone")
+# fn1("xue python come")
+# fn1("linyiwei")
+
+# def outer(num1):
+
+#     def inner(num2):
+#         nonlocal num1
+#         num1 += num2
+#         print(num1)
+
+#     return inner
+
+# fn = outer(10)
+# fn(10)
+# fn(10)
+# fn(10)
+# fn(10)
+
+# def account_create(initial_amount = 0):
+
+#     def atm(num, deposit = True):
+#         nonlocal initial_amount
+#         if deposit:
+#             initial_amount += num
+#             print(f"deposit: +{num}, account: {initial_amount}")
+#         else:
+#             initial_amount -= num
+#             print(f"deposit: -{num}, account: {initial_amount}")
+
+#     return atm
+
+# atm = account_create()
+
+# atm(100)
+# atm(200)
+# atm(100, deposit = False)
+
+# syntax sugar
+
+# def outer(func):
+#     def inner():
+#         print("I sleep")
+#         func()
+#         print("I get up")
+    
+#     return inner
+
+# @outer
+# def sleep():
+#     import random
+#     import time
+#     print("Sleep......")
+#     time.sleep(random.randint(1, 5))
+
+# sleep()
+# fn = outer(sleep)
+# fn()
+
+# class StrTools:
+#     pass
+
+# str_tool = StrTools()
+# s1 = str_tool
+# s2 = str_tool
+# print(id(s1))
+# print(id(s2))
+# singleton objects
+
+# class Person:
+#     pass
+
+# class Worker(Person):
+#     pass
+
+# class Student(Person):
+#     pass
+
+# class Teacher(Person):
+#     pass
+
+# class PersonFactory:
+#     def get_person(self, p_type):
+#         if p_type == 'w':
+#             return Worker()
+#         elif p_type == 's':
+#             return Student()
+#         else:
+#             return Teacher()
+
+# pf = PersonFactory()
+# worker = pf.get_person('w')
+# stu = pf.get_person('s')
+# teacher = pf.get_person('t')
+
+# worker2 = Worker()
+# worker3 = Worker()
+# worker4 = Worker()
+# worker5 = Worker()
+
+# import time
+# import threading
+# def sing(msg):
+#     while True:
+#         print(f"I am singing...{msg}")
+#         time.sleep(1)
+
+# def dance(msg):
+#     while True:
+#         print(f"I am dancing...{msg}")
+#         time.sleep(1)
+
+# if __name__ == '__main__':
+#     sing_thread = threading.Thread(target = sing, args = ("hahahaha", ))
+#     dance_thread = threading.Thread(target = dance, kwargs = {"msg": "I am dancing lalala"})
+#     sing_thread.start()
+#     dance_thread.start()
+#     # sing()
+#     # dance()
+# import socket
+
+# socket_server = socket.socket()
+# # ip and address
+# socket_server.bind(("localhost", 8888))
+# # listen to the host 
+# socket_server.listen(1)
+# # wait for the client to connect
+# result = socket_server.accept()
+# # conn = result[0]
+# # address = result[1]
+# conn, address = socket_server.accept()
+
+# print(f"receive the link from the client, client message is: {address}")
+# # receive the client message
+
+# data = conn.recv(1024).decode("utf-8")
+# #recv accept argument is buffer size, generally 1024
+# print(f"the client send message: {data}")
+
+# msg = input("Please send your message to reply the client")
+# conn.send(msg)
+
+import socket
+
+socket_client = socket.socket()
+
+socket_client.connect(("localhost", 8888))
+
+socket_client.send("Hello".encode("UTF-8"))
+
+recv_data = socket_client.recv(1024)
+
+print(f"message: {recv_data.decode("utf-8")}")
+
+socket_client.close()
