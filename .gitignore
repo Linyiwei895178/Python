@@ -1,6 +1,29 @@
+# 二进制/压缩文件
 *.exe
 *.zip
-archive
-__pycache__
-*__pycache__
-*.venv
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+archive/
+
+# 数据库文件
+*.db
+*.sqlite3
+
+# 生成产物
+render.html
+
+# 练习/下载的数据（真实数据集放在 DataSet/ 目录下）
+cs50/*.csv
+cumcm/*.csv
+
+# IDE / 系统
+.DS_Store
+Thumbs.db

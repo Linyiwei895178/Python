@@ -1,0 +1,13 @@
+# 数据分析与可视化
+numpy>=2.0
+pandas>=3.0
+matplotlib>=3.11
+
+# Jupyter Notebook 环境
+jupyter
+ipykernel
+
+# 以下包在代码中有使用，但当前 .venv 未安装，请按需安装：
+# pyecharts      pyecharts/ 目录的交互式图表
+# scikit-learn   Machine-Learning-Specialization-Coursera/ 机器学习课程
+# tensorflow     Machine-Learning-Specialization-Coursera/ C2/C3 深度学习部分
